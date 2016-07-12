@@ -1,6 +1,9 @@
 # docker-apache-php7
 Docker image com PHP 7.0
 
+## Referências
+<p>Neste fork foi utilizado integralmente o Dockerfile da *Coderockr*, pois contém diversas extensões e configurações do PHP e do Apache, possibilitando utilizá-la sem necessidade de novas implementações.</p>
+
 ## Utilização
 
 *clonagem do repo*<br/>
@@ -21,3 +24,5 @@ Após, serão realizados alguns passos em um só comando:
 ## Observações
 
   * O caminho das pastas e arquivos referenciados no volume deve ser **absoluto (full path)**
+  * Caso deseje apenas copiar o arquivo do vhost, retire o segundo volume do comando acima e, após a criação do container, use o comando abaixo, que copia o arquivo de vhosts para a pasta do container 'application':
+    * `sudo docker cp /path/to/000-default.conf application:/etc/apache2/sites-enabled/000-default.conf`
