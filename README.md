@@ -2,7 +2,7 @@
 Docker image com PHP 7.0
 
 ## Referências
-<p>Neste fork foi utilizado integralmente o Dockerfile da *Coderockr*, pois contém diversas extensões e configurações do PHP e do Apache, possibilitando utilizá-la sem necessidade de novas implementações.</p>
+Neste fork foi utilizado integralmente o [Dockerfile da Coderockr](https://github.com/coderockr/docker-apache-php7), pois contém diversas extensões e configurações do PHP e do Apache, possibilitando utilizá-la sem necessidade de novas implementações.
 
 ## Utilização
 
