@@ -26,3 +26,10 @@ Após, serão realizados alguns passos em um só comando:
   * O caminho das pastas e arquivos referenciados no volume deve ser **absoluto (full path)**
   * Caso deseje apenas copiar o arquivo do vhost, retire o segundo volume do comando acima e, após a criação do container, use o comando abaixo, que copia o arquivo de vhosts para a pasta do container 'application':
     * `sudo docker cp /path/to/000-default.conf application:/etc/apache2/sites-enabled/000-default.conf`
+
+
+## TODO
+
+  * Adicionar e testar configurações de xdebug remoto.
+  * Adicionar e testar extensões:
+    * zip
